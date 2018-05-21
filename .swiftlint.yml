@@ -1,0 +1,36 @@
+disabled_rules:
+  - line_length
+  - nesting
+  - cyclomatic_complexity
+  - notification_center_detachment
+  - for_where
+  - private_over_fileprivate
+  - class_delegate_protocol
+
+included:
+
+excluded:
+  - Carthage
+  - Pods
+
+type_name:
+  min_length: 3 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50
+
+type_body_length:
+  - 300 # warning
+  - 400 # error
+
+function_body_length:
+  - 100
+  - 200
+
+file_length:
+  warning: 1000
+  error: 1500
+
+variable_name:
+  min_length: 2
+  max_length: 40

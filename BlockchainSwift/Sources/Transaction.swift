@@ -1,5 +1,5 @@
 //
-//  Transation.swift
+//  Transaction.swift
 //  BlockchainSwift
 //
 //  Created by 洪鑫 on 2018/5/21.
@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct Transaction {
+    let sender: String
+    let recipient: String
+    let amount: Int
+}

@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct Block {
+    let index: Int
+    let timestamp: TimeInterval
+    let transactions: [Transaction]
+    let proof: Int
+    let previousHash: String
+}

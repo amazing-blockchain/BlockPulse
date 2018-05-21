@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		D367F80420B3104100A35400 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367F80320B3104100A35400 /* Block.swift */; };
 		D367F80620B3105000A35400 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367F80520B3105000A35400 /* Blockchain.swift */; };
-		D367F80820B310BC00A35400 /* Transation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367F80720B310BC00A35400 /* Transation.swift */; };
+		D367F80820B310BC00A35400 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367F80720B310BC00A35400 /* Transaction.swift */; };
 		D367F80A20B3124100A35400 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = D367F80920B3124100A35400 /* Cartfile */; };
 		D367F80E20B313A900A35400 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D367F80D20B313A900A35400 /* CryptoSwift.framework */; };
 		D367F81120B3166F00A35400 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = D367F81020B3166F00A35400 /* Cartfile.resolved */; };
+		D367F81320B31B2C00A35400 /* POW.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367F81220B31B2C00A35400 /* POW.swift */; };
 		D3F6329720B30E1B0030E9FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6329620B30E1B0030E9FA /* AppDelegate.swift */; };
 		D3F6329920B30E1B0030E9FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6329820B30E1B0030E9FA /* ViewController.swift */; };
 		D3F6329C20B30E1B0030E9FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F6329A20B30E1B0030E9FA /* Main.storyboard */; };
@@ -42,10 +43,11 @@
 /* Begin PBXFileReference section */
 		D367F80320B3104100A35400 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		D367F80520B3105000A35400 /* Blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
-		D367F80720B310BC00A35400 /* Transation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transation.swift; sourceTree = "<group>"; };
+		D367F80720B310BC00A35400 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		D367F80920B3124100A35400 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		D367F80D20B313A900A35400 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		D367F81020B3166F00A35400 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = SOURCE_ROOT; };
+		D367F81220B31B2C00A35400 /* POW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POW.swift; sourceTree = "<group>"; };
 		D3F6329320B30E1B0030E9FA /* BlockchainSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockchainSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F6329620B30E1B0030E9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3F6329820B30E1B0030E9FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,8 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				D367F80320B3104100A35400 /* Block.swift */,
+				D367F80720B310BC00A35400 /* Transaction.swift */,
 				D367F80520B3105000A35400 /* Blockchain.swift */,
-				D367F80720B310BC00A35400 /* Transation.swift */,
+				D367F81220B31B2C00A35400 /* POW.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -334,9 +337,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D367F80420B3104100A35400 /* Block.swift in Sources */,
-				D367F80820B310BC00A35400 /* Transation.swift in Sources */,
+				D367F80820B310BC00A35400 /* Transaction.swift in Sources */,
 				D367F80620B3105000A35400 /* Blockchain.swift in Sources */,
 				D3F6329920B30E1B0030E9FA /* ViewController.swift in Sources */,
+				D367F81320B31B2C00A35400 /* POW.swift in Sources */,
 				D3F6329720B30E1B0030E9FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

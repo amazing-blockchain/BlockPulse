@@ -31,16 +31,24 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dEO-pl-ZGb">
-                        <rect key="frame" x="251" y="15" width="20" height="20"/>
+                        <rect key="frame" x="256" y="15" width="20" height="20"/>
                     </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:03" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lN-3d-c7t">
+                        <rect key="frame" x="204" y="16" width="42" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="bKr-Mx-fMg" firstAttribute="leading" secondItem="H9H-LQ-bjG" secondAttribute="trailing" constant="5" id="IHv-Kc-dON"/>
                     <constraint firstItem="dEO-pl-ZGb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="J7H-0w-VNX"/>
                     <constraint firstItem="bKr-Mx-fMg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NH1-7Q-mr1"/>
-                    <constraint firstAttribute="trailing" secondItem="dEO-pl-ZGb" secondAttribute="trailing" constant="15" id="O1h-dL-SDw"/>
+                    <constraint firstAttribute="trailing" secondItem="dEO-pl-ZGb" secondAttribute="trailing" constant="10" id="O1h-dL-SDw"/>
+                    <constraint firstItem="dEO-pl-ZGb" firstAttribute="leading" secondItem="8lN-3d-c7t" secondAttribute="trailing" constant="10" id="RXE-H0-JfV"/>
                     <constraint firstAttribute="trailing" secondItem="bKr-Mx-fMg" secondAttribute="trailing" constant="10" id="Uor-2d-lgB"/>
                     <constraint firstItem="H9H-LQ-bjG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gI8-yp-CXM"/>
+                    <constraint firstItem="8lN-3d-c7t" firstAttribute="centerY" secondItem="dEO-pl-ZGb" secondAttribute="centerY" id="i06-aO-VgJ"/>
                     <constraint firstItem="H9H-LQ-bjG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rHW-D8-yJY"/>
                 </constraints>
             </tableViewCellContentView>
@@ -48,6 +56,7 @@
             <connections>
                 <outlet property="activityIndicator" destination="dEO-pl-ZGb" id="hQI-ua-r0f"/>
                 <outlet property="subtitleLabel" destination="bKr-Mx-fMg" id="4SE-Cy-ItS"/>
+                <outlet property="timerLabel" destination="8lN-3d-c7t" id="Dx1-La-MAi"/>
                 <outlet property="titleLabel" destination="H9H-LQ-bjG" id="6BZ-p1-h41"/>
             </connections>
         </tableViewCell>

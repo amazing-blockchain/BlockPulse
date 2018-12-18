@@ -31,7 +31,8 @@ class BlockchainServer {
             NotificationCenter.default.post(name: NSNotification.Name(.miningStatusDidChange), object: nil)
         }
     }
-    let systemMiningAwards = 50.0
+    let genesisBlockAwards: Double = 100
+    let systemMiningAwards: Double = 50
 
     // MARK: - Initializers
     init() {

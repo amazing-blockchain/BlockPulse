@@ -13,6 +13,11 @@ class Blockchain: Codable {
     var tempTransactions = [Transaction]()
 
     init() {
+        let transaction = Transaction(sender: "System",
+                                      recipient: BlockchainServer.shared.currentNode?.address ?? String(),
+                                      amount: BlockchainServer.shared.genesisBlockAwards,
+                                      timestamp: Date().timeIntervalSince1970)
+        tempTransactions.append(transaction)
         // Create the genesis block
         createBlock(proof: 100, previousHash: "Genesis Block".data(using: .utf8))
     }

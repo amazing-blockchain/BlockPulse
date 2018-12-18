@@ -253,10 +253,12 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
             cell.titleLabel.textColor = .black
             cell.titleLabel.text = "在线节点"
             cell.subtitleLabel.text = String(BlockchainServer.shared.onlineNodes.count)
+            cell.timerLabel.isHidden = true
         case (0, 1):
             cell.titleLabel.textAlignment = .left
             cell.activityIndicator.isHidden = true
             cell.activityIndicator.stopAnimating()
+            cell.timerLabel.isHidden = true
             if BlockchainServer.shared.isBlockchainStarted {
                 cell.isUserInteractionEnabled = false
                 cell.accessoryType = .none
@@ -284,6 +286,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
             cell.titleLabel.textAlignment = .left
             cell.titleLabel.text = "难度"
             cell.subtitleLabel.text = "\(Pow.difficulty)"
+            cell.timerLabel.isHidden = true
         case (0, 3):
             if BlockchainServer.shared.isBlockchainStarted {
                 if BlockchainServer.shared.isMining {
@@ -293,6 +296,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
                     cell.activityIndicator.startAnimating()
                     cell.titleLabel.textColor = .lightGray
                     cell.titleLabel.text = "正在挖矿..."
+                    cell.startCounting()
                 } else {
                     cell.isUserInteractionEnabled = true
                     cell.accessoryType = .disclosureIndicator
@@ -300,6 +304,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
                     cell.activityIndicator.stopAnimating()
                     cell.titleLabel.textColor = .black
                     cell.titleLabel.text = "开始挖矿"
+                    cell.stopCounting()
                 }
             } else {
                 cell.isUserInteractionEnabled = false
@@ -308,6 +313,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
                 cell.activityIndicator.stopAnimating()
                 cell.titleLabel.textColor = .lightGray
                 cell.titleLabel.text = "开始挖矿"
+                cell.timerLabel.isHidden = true
             }
             cell.titleLabel.textAlignment = .left
             cell.subtitleLabel.text = nil
@@ -320,6 +326,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
             cell.titleLabel.textColor = .red
             cell.titleLabel.text = "断开连接"
             cell.subtitleLabel.text = nil
+            cell.timerLabel.isHidden = true
         default:
             break
         }

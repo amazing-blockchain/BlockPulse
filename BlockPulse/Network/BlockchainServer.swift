@@ -256,7 +256,7 @@ extension BlockchainServer {
             }
             let output = "【收到消息】\(message.sender?.address ?? ""): \(type.rawValue)"
             NotificationCenter.default.post(name: NSNotification.Name(.newConsoleOutput), object: output)
-            if let index = onlineNodes.index(of: sender) {
+            if let index = onlineNodes.firstIndex(of: sender) {
                 onlineNodes.remove(at: index)
             }
             if sender == currentNode {

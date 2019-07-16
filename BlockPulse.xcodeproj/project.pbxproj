@@ -379,6 +379,7 @@
 				TargetAttributes = {
 					D3F6329220B30E1B0030E9FA = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1020;
 					};
 					D3F632A620B30E1C0030E9FA = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -688,7 +689,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongxin.BlockPulse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -709,7 +710,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongxin.BlockPulse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -728,7 +729,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongxin.BlockPulseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlockPulse.app/BlockPulse";
 			};
@@ -748,7 +749,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongxin.BlockPulseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlockPulse.app/BlockPulse";
 			};
@@ -767,7 +768,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongxin.BlockPulseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BlockPulse;
 			};
@@ -786,7 +787,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongxin.BlockPulseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BlockPulse;
 			};
